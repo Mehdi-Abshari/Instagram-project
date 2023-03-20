@@ -18,12 +18,12 @@
           <div class="register-form">
             <img src="Images/insta-logo.png" alt="" />
             <p>Sign up to see photos and videos from your friends.</p>
-            <form action="server.php">
-              <input type="text" placeholder="Mobile Number or Email" />
-              <input type="text" placeholder="Full Name" />
-              <input type="text" placeholder="Username" />
-              <input type="password" placeholder="Password" />
-              <input type="submit" value="Sign up" />
+            <form action="main.php" method="post">
+              <input type="text" placeholder="Mobile Number or Email" name="input_mobile"/>
+              <input type="text" placeholder="Full Name" name="fn_input"/>
+              <input type="text" placeholder="Username" name="username"/>
+              <input type="password" placeholder="Password" name="pass"/>
+              <input type="submit" value="Sign up" name="send"/>
             </form>
             <p>
               By signing up, you agree to our <a href="#">Terms</a> ,
@@ -71,3 +71,4 @@
     </div>
   </body>
 </html>
+<?php src="main.php"?>
